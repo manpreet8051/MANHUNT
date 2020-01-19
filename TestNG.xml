@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name ='testingProjecr'>
+
+    <listeners>
+       <listener class-name="com.iBank.utilities.Reporting"/>
+    </listeners>
+    
+    <test name ="Banking App test">
+          <parameter name = "browser" value ="chrome" />
+          <classes>
+             <class name ="test.iBank.testClasses.TC_LoginTest_001" />
+          </classes>
+     </test>
+</suite>
